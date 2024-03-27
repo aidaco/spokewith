@@ -1,23 +1,17 @@
-from pathlib import Path
-
 import typer
-from rich import print
-from rich.align import Align
-from rich.console import Console, Group
-from rich.table import Table
 
 cli = typer.Typer()
 
 
 @cli.command()
-def show():
-    """Show logged calls."""
-    print("Show")
+def list():
+    """List log entries."""
+    print("List")
 
 
 @cli.command()
-def log():
-    """Log call(s)."""
+def add():
+    """Add log entry."""
     print("Log")
 
 
@@ -28,7 +22,7 @@ def edit():
 
 
 @cli.command()
-def delete():
+def remove():
     """Delete log entry."""
     print("Delete")
 
